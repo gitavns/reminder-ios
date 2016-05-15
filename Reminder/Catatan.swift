@@ -12,5 +12,8 @@ class Catatan {
     var nama: String
     var deskripsi: String
     
-    
+    init(nama: String, deskripsi: String = "") {
+        self.nama       = nama
+        self.deskripsi  = deskripsi
+    }
 }
