@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatatanDetailViewController.swift; path = ../CatatanDetailViewController.swift; sourceTree = "<group>"; };
+		84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatatanDetailViewController.swift; sourceTree = "<group>"; };
 		848174431CE7782900F41E30 /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848174461CE7782A00F41E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8481744B1CE7782A00F41E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +42,7 @@
 		8481743A1CE7782900F41E30 = {
 			isa = PBXGroup;
 			children = (
+				84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */,
 				848174451CE7782A00F41E30 /* Reminder */,
 				848174441CE7782900F41E30 /* Products */,
 			);
@@ -58,7 +59,6 @@
 		848174451CE7782A00F41E30 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
-				84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */,
 				8481745C1CE7826700F41E30 /* CatatanTableViewController.swift */,
 				8481745A1CE77A6800F41E30 /* Catatan.swift */,
 				848174461CE7782A00F41E30 /* AppDelegate.swift */,
