@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84542BC11CE87014003920A2 /* CatatanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */; };
 		848174471CE7782A00F41E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848174461CE7782A00F41E30 /* AppDelegate.swift */; };
 		8481744C1CE7782A00F41E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481744A1CE7782A00F41E30 /* Main.storyboard */; };
 		8481744E1CE7782A00F41E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8481744D1CE7782A00F41E30 /* Assets.xcassets */; };
 		848174511CE7782A00F41E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481744F1CE7782A00F41E30 /* LaunchScreen.storyboard */; };
 		8481745B1CE77A6800F41E30 /* Catatan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481745A1CE77A6800F41E30 /* Catatan.swift */; };
 		8481745D1CE7826700F41E30 /* CatatanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481745C1CE7826700F41E30 /* CatatanTableViewController.swift */; };
+		F7FEAEDC1CEC93C200DE1CB0 /* CatatanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FEAEDB1CEC93C200DE1CB0 /* CatatanDetailViewController.swift */; };
+		F7FEAEDE1CECA41300DE1CB0 /* AddCatatanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FEAEDD1CECA41300DE1CB0 /* AddCatatanViewController.swift */; };
+		F7FEAEE01CECA97100DE1CB0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FEAEDF1CECA97100DE1CB0 /* CoreData.framework */; };
+		F7FEAEE31CECA9D700DE1CB0 /* Catatan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7FEAEE11CECA9D700DE1CB0 /* Catatan.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatatanDetailViewController.swift; sourceTree = "<group>"; };
 		848174431CE7782900F41E30 /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848174461CE7782A00F41E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8481744B1CE7782A00F41E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +28,10 @@
 		848174521CE7782A00F41E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8481745A1CE77A6800F41E30 /* Catatan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catatan.swift; sourceTree = "<group>"; };
 		8481745C1CE7826700F41E30 /* CatatanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatatanTableViewController.swift; sourceTree = "<group>"; };
+		F7FEAEDB1CEC93C200DE1CB0 /* CatatanDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatatanDetailViewController.swift; sourceTree = "<group>"; };
+		F7FEAEDD1CECA41300DE1CB0 /* AddCatatanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCatatanViewController.swift; sourceTree = "<group>"; };
+		F7FEAEDF1CECA97100DE1CB0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F7FEAEE21CECA9D700DE1CB0 /* Catatan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Catatan.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FEAEE01CECA97100DE1CB0 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +49,7 @@
 		8481743A1CE7782900F41E30 = {
 			isa = PBXGroup;
 			children = (
-				84542BC01CE87014003920A2 /* CatatanDetailViewController.swift */,
+				F7FEAEDF1CECA97100DE1CB0 /* CoreData.framework */,
 				848174451CE7782A00F41E30 /* Reminder */,
 				848174441CE7782900F41E30 /* Products */,
 			);
@@ -59,13 +66,16 @@
 		848174451CE7782A00F41E30 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				F7FEAEDB1CEC93C200DE1CB0 /* CatatanDetailViewController.swift */,
 				8481745C1CE7826700F41E30 /* CatatanTableViewController.swift */,
 				8481745A1CE77A6800F41E30 /* Catatan.swift */,
 				848174461CE7782A00F41E30 /* AppDelegate.swift */,
 				8481744A1CE7782A00F41E30 /* Main.storyboard */,
+				F7FEAEDD1CECA41300DE1CB0 /* AddCatatanViewController.swift */,
 				8481744D1CE7782A00F41E30 /* Assets.xcassets */,
 				8481744F1CE7782A00F41E30 /* LaunchScreen.storyboard */,
 				848174521CE7782A00F41E30 /* Info.plist */,
+				F7FEAEE11CECA9D700DE1CB0 /* Catatan.xcdatamodeld */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -144,7 +154,9 @@
 			files = (
 				8481745B1CE77A6800F41E30 /* Catatan.swift in Sources */,
 				848174471CE7782A00F41E30 /* AppDelegate.swift in Sources */,
-				84542BC11CE87014003920A2 /* CatatanDetailViewController.swift in Sources */,
+				F7FEAEDE1CECA41300DE1CB0 /* AddCatatanViewController.swift in Sources */,
+				F7FEAEDC1CEC93C200DE1CB0 /* CatatanDetailViewController.swift in Sources */,
+				F7FEAEE31CECA9D700DE1CB0 /* Catatan.xcdatamodeld in Sources */,
 				8481745D1CE7826700F41E30 /* CatatanTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7FEAEE11CECA9D700DE1CB0 /* Catatan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7FEAEE21CECA9D700DE1CB0 /* Catatan.xcdatamodel */,
+			);
+			currentVersion = F7FEAEE21CECA9D700DE1CB0 /* Catatan.xcdatamodel */;
+			path = Catatan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8481743B1CE7782900F41E30 /* Project object */;
 }

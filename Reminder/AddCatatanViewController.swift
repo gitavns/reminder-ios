@@ -1,5 +1,5 @@
 //
-//  CatatanDetailViewController.swift
+//  AddCatatanViewController.swift
 //  Reminder
 //
 //  Created by WOI on 5/18/16.
@@ -8,20 +8,16 @@
 
 import UIKit
 
-class CatatanDetailViewController: UIViewController {
+class AddCatatanViewController: UIViewController {
 
     @IBOutlet weak var taskName: UITextField!
     @IBOutlet weak var taskDescription: UITextView!
     
-    var name: String?
-    var desc: String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        taskName.text = name
-        taskDescription.text = desc
-        
-        // Do any additional setup after loading the view.
+        taskDescription.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).CGColor
+        taskDescription.layer.borderWidth = 1.0
+        taskDescription.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {

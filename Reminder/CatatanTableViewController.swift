@@ -6,6 +6,7 @@
 //  Copyright © 2016 gitavns. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
 class CatatanTableViewController: UITableViewController {
@@ -39,7 +40,7 @@ class CatatanTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,17 +58,17 @@ class CatatanTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            daftarCatatan.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.
@@ -99,6 +100,17 @@ class CatatanTableViewController: UITableViewController {
             }
         }
      
+    }
+    
+    @IBAction func receiveAddCatatanAction(segue: UIStoryboardSegue) {
+        if let detail = segue.sourceViewController as? AddCatatanViewController {
+            if let taskName = detail.taskName.text {
+                var taskDescription = ""
+                taskDescription = detail.taskDescription.text
+                daftarCatatan.append(Catatan(nama: taskName, deskripsi: taskDescription))
+                self.tableView.reloadData()
+            }
+        }
     }
     
 
